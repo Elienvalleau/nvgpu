@@ -15,7 +15,9 @@ def device_status(device_index):
     handle = nv.nvmlDeviceGetHandleByIndex(device_index)
     device_name = nv.nvmlDeviceGetName(handle)
     if six.PY3:
-        device_name = device_name.decode('UTF-8')
+        #device_name = device_name.decode('UTF-8')
+        print("device_name :", device_name)
+        device_name = device_name
     nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
     try:
         utilization = nv.nvmlDeviceGetUtilizationRates(handle).gpu
