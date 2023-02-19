@@ -7,7 +7,6 @@ MAINTAINER Bohumir Zamecnik (bohumir.zamecnik@rossum.ai)
 RUN apt update && apt install -y python-pip python-setuptools python-dev gcc
 
 RUN pip install wheel
-RUN pip install pypandoc==1.7.5
 
 # install the app from sources
 WORKDIR /root/nvgpu
