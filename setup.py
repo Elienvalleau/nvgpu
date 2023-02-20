@@ -1,5 +1,6 @@
 from setuptools import setup
 
+
 setup(name='nvgpu',
     version='0.9.0',
     description='NVIDIA GPU tools',
