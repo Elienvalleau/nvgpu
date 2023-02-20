@@ -1,6 +1,5 @@
 from setuptools import setup
 
-
 setup(name='nvgpu',
     version='0.9.0',
     description='NVIDIA GPU tools',
@@ -24,9 +23,8 @@ setup(name='nvgpu',
         'six',
         'termcolor',
         'tabulate',
-        'pypandoc==1.7.5',
     ],
-    setup_requires=['setuptools-markdown'],
+    #setup_requires=['setuptools-markdown'],
     long_description_markdown_filename='README.md',
     # See https://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
